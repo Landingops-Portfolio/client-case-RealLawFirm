@@ -1,0 +1,16 @@
+/*
+Theme Name: 법무법인 리앤
+Author: lawfirmleen
+Author URL: http://lawfirmleen.gabia.io/
+Description: 법무법인 리앤
+Version: 1.0.0
+*/
+
+#wpadminbar {background:rgba(0,0,0,0.8) !important;}
+#wpadminbar:after {display:block; content:''; clear:both;}
+#wpadminbar .quicklinks ul {float:left;}
+#wpadminbar .quicklinks ul.ab-top-secondary {float:right;}
+
+@media screen and (max-width: 600px){
+    #wpadminbar {position:fixed !important;}
+}

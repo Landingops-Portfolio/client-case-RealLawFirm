@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+@import url('../board_common.css');
+/**
+ * @author https://www.cosmosfarm.com
+ */
+
+/*list*/
+.gallery_li01 {display:flex; flex-wrap:wrap; margin:20px -20px 35px 0;} 
+.gallery_li01:after {display:none;} 
+.gallery_li01 > li {width:calc(25% - 20px); margin:40px 20px 0 0;} 
+.gallery_li01 .img {width:100%; overflow:hidden; border:1px solid #e0e0e0;} 
+.gallery_li01 .img > img {width:100%; height:100%; object-fit:cover;} 
+.gallery_li01 .type_wrap {margin:19px -2px 0 0;} 
+.gallery_li01 .type_wrap > span {display:inline-block; padding:9px 19px; margin:5px 2px 0 0; font-weight:700; line-height:1; letter-spacing:0; border:1px solid #e0e0e0; border-radius:4px; background:#f0f0f0;} 
+.gallery_li01 .tit {margin:24px 0 16px 0;} 
+.gallery_li01 .tit strong {display:block; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;} 
+.gallery_li01 .txt {display:-webkit-box; max-height:40px; margin-bottom:24px; font-size:14px; line-height:1.4; letter-spacing:0; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden;} 
+.gallery_li01 .txt p {display:inline;} .gallery_li01 .date { color:#888; font-size:14px; line-height:1; letter-spacing:0;} 
+.gallery_li01 .tag {margin-bottom:10px; font-size:14px; font-weight:700;}
+
+/*editor*/
+#kboard-default-editor { overflow: hidden; }
+#kboard-default-editor form { margin: 0; padding: 0; }
+#kboard-default-editor select { display: inline; margin: 0; padding: 0 5px; font-size: 14px; width: 30%; height: 28px; line-height: 28px; color: #666666; border-radius: 0; border: 0; border-bottom: 1px solid #dcdcdc; box-shadow: none; background: none; background-color: transparent; box-sizing: content-box; vertical-align: middle; text-indent: 0; -webkit-appearance: menulist; -moz-appearance: menulist; appearance: menulist; }
+#kboard-default-editor input[type=text],
+#kboard-default-editor input[type=email],
+#kboard-default-editor input[type=number],
+#kboard-default-editor input[type=date],
+#kboard-default-editor input[type=password] { display: inline; margin: 0; padding: 0 5px; width: 30%; height: 28px; line-height: 28px; font-size: 14px; color: #666666; border-radius: 0; border: 0; border-bottom: 1px solid #dcdcdc; box-shadow: none; background: none; background-color: transparent; box-sizing: content-box; vertical-align: middle; }
+#kboard-default-editor input[type=checkbox] { width: auto; -webkit-appearance: checkbox; -moz-appearance: checkbox; appearance: checkbox; }
+#kboard-default-editor input[type=radio] { width: auto; -webkit-appearance: radio; -moz-appearance: radio; appearance: radio; }
+#kboard-default-editor select:hover,
+#kboard-default-editor input[type=text]:hover,
+#kboard-default-editor input[type=email]:hover,
+#kboard-default-editor input[type=number]:hover,
+#kboard-default-editor input[type=date]:hover,
+#kboard-default-editor input[type=password]:hover { border-bottom: 1px solid #9e9e9e; }
+#kboard-default-editor select:focus,
+#kboard-default-editor input[type=text]:focus,
+#kboard-default-editor input[type=email]:focus,
+#kboard-default-editor input[type=number]:focus,
+#kboard-default-editor input[type=date]:focus,
+#kboard-default-editor input[type=password]:focus { border-bottom: 2px solid #9e9e9e; }
+#kboard-default-editor input[type=file] { display: inline; margin: 0; padding: 0; width: 30%; font-size: 13px; color: #666666; border-radius: 0; border: 0; box-shadow: none; background-color: transparent; }
+#kboard-default-editor .kboard-attr-title input { width: 70%; }
+#kboard-default-editor .kboard-attr-row { float: left; padding: 5px 0; width: 100%; background-color: white; }
+#kboard-default-editor .kboard-attr-row .attr-name { display: inline; float: left; margin: 0; padding: 0 10px 0 10px; width: 120px; line-height: 30px; color: #545861; font-size: 14px; font-weight: bold; }
+#kboard-default-editor .kboard-attr-row .attr-name img { display: inline; margin: 0; padding: 0; width: auto; max-width: 100%; vertical-align: middle; }
+#kboard-default-editor .kboard-attr-row .attr-name .attr-required-text { color: red; font-weight: normal; font-size: 13px; }
+#kboard-default-editor .kboard-attr-row.kboard-attr-content .attr-name { display: none; }
+#kboard-default-editor .kboard-attr-row .attr-value { margin: 0 0 0 140px; padding: 0; line-height: 30px; font-size: 14px; }
+#kboard-default-editor .kboard-attr-row .attr-value .attr-value-option { display: inline; padding-right: 20px; width: auto; font-size: 14px; cursor: pointer; }
+#kboard-default-editor .kboard-attr-row .attr-value .attr-value-option input { cursor: pointer; }
+#kboard-default-editor .kboard-attr-row .attr-value .attr-value-label { display: inline; padding-right: 5px; width: auto; cursor: pointer; }
+#kboard-default-editor .kboard-attr-row .attr-value .attr-value-label input { cursor: pointer; }
+#kboard-default-editor .kboard-attr-row .attr-value .description { margin: 0; color: #666666; }
+#kboard-default-editor .kboard-attr-row .attr-value .kboard-tree-category-wrap { float: left; width: 100%; }
+#kboard-default-editor .kboard-attr-row .attr-value .kboard-tree-category-wrap select { clear: both; float: left; margin-bottom: 5px; width: 30%; }
+#kboard-default-editor .kboard-content { float: left; margin: 0; padding: 9px 0; width: 100%; background-color: white; }
+#kboard-default-editor .kboard-content .editor-textarea { display: inline; margin: 0; padding: 5px; width: 100%; min-width: 100%; max-width: 100%; height: 250px; min-height: 0; font-size: 14px; border: 1px solid #dcdcdc; box-shadow: none; background: none; background-color: transparent; box-sizing: border-box; text-indent: 0; }
+#kboard-default-editor .kboard-control { float: left; padding: 15px 0; width: 100%; }
+#kboard-default-editor .kboard-control .left { position: static; float: left; }
+#kboard-default-editor .kboard-control .right { position: static; float: right; width: 50%; text-align: right; }
+#kboard-default-editor.confirm { margin: 100px auto; max-width: 590px; }
+#kboard-default-editor.confirm input[type=password] { width: 100%; box-sizing: border-box; }
+
+/*latest*/
+#kboard-default-latest table { display: table; table-layout: fixed; width: 100%; border: 0; border-bottom: 1px solid #f1f1f1; }
+#kboard-default-latest table tr { padding: 0; border: 0; }
+#kboard-default-latest table th { padding: 5px 0; height: auto; border: 0; text-align: center; }
+#kboard-default-latest table td { padding: 5px 0; height: auto; border: 0; border-top: 1px solid #f1f1f1; vertical-align: middle; }
+#kboard-default-latest table td.kboard-latest-title { text-align: left; }
+#kboard-default-latest table .kboard-latest-title { padding-left: 5px; font-size: 14px; }
+#kboard-default-latest table .kboard-latest-title a { text-decoration: none; box-shadow: none; }
+#kboard-default-latest table .kboard-latest-title img { display: inline; margin: 0; width: auto; height: auto; vertical-align: middle; max-width: 100%; }
+#kboard-default-latest table .kboard-latest-title .kboard-comments-count { }
+#kboard-default-latest table .kboard-latest-date { width: 80px; text-align: center; font-size: 14px; }
+
+@media screen and (max-width: 1199px) {
+	/*list*/
+	.gallery_li01 > li {width:calc(33.333% - 20px);}
+	.success .gallery_li01 > li .img {height: auto;}
+}
+@media screen and (max-width: 1024px) {
+	/*list*/
+	.gallery_li01 > li {width:calc(33.333% - 20px);} 
+}
+@media screen and (max-width: 768px) {
+	/*list*/
+	.gallery_li01 > li {width:calc(50% - 20px);}
+}
+@media screen and (max-width: 640px) {
+	/*list*/
+	.gallery_li01 {margin:28px -8px 20px 0;}
+	.gallery_li01 > li {width:calc(50% - 8px); margin-right:8px;}
+	.gallery_li01 .type_wrap {margin-top:11px;}
+	.gallery_li01 .type_wrap > span {padding:7px 15px; font-size:10px;}
+	.gallery_li01 .tit {margin:24px 0 8px; font-size:12px; line-height:1.4;}
+	.gallery_li01 .tit strong {display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; white-space:wrap; max-height:34px;}
+	.gallery_li01 .txt {max-height:28px; margin-bottom:16px; font-size:10px;}
+	.gallery_li01 .date {font-size:10px; line-height:1.4;}
+	
+	/*editor*/
+	#kboard-default-editor select,
+	#kboard-default-editor input[type=text],
+	#kboard-default-editor input[type=email],
+	#kboard-default-editor input[type=number],
+	#kboard-default-editor input[type=date],
+	#kboard-default-editor input[type=password],
+	#kboard-default-editor input[type=file] { width: 100% !important; box-sizing: border-box; }
+	#kboard-default-editor .kboard-attr-row { padding: 10px 0; }
+	#kboard-default-editor .kboard-attr-row .attr-name { padding: 0; width: 100%; font-size: 14px; }
+	#kboard-default-editor .kboard-attr-row .attr-value { margin: 0; }
+	#kboard-default-editor .kboard-attr-row .attr-value .kboard-tree-category-wrap select { margin-bottom: 10px; width: 100%; }
+	#kboard-default-editor.confirm { max-width: none; }
+}
+
+@media screen and (max-width:374px) {
+	/*list*/
+	.gallery_li01 {margin:0 0 20px 0;} 
+	.gallery_li01 > li {width:100%; margin-right:0;} 
+}

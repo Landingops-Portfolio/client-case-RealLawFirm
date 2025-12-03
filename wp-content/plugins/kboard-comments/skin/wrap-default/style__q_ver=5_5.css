@@ -1,0 +1,141 @@
+@charset "utf-8";
+/**
+ * @author https://www.cosmosfarm.com/
+ */
+ 
+ .wrap_cmt_default .comments-header {display:flex; align-items:center; justify-content:space-between; padding-bottom:10px; border-bottom:1px solid #e0e0e0;}
+ .wrap_cmt_default .comments-header .comments-count {color:#888;}
+ .wrap_cmt_default .comments-header .comments-count span {font-weight:700; color:#000;}
+ .wrap_cmt_default .comments-header .comments-sort form {display:block;}
+ .wrap_cmt_default .comments-header .comments-sort form select {position:relative; display:block; width:auto; height:auto; color:#888; padding:0 40px 0 10px; border:0; background:url(images/ico_select01.svg) no-repeat right 10px center;}
+ .wrap_cmt_default .comments-header .comments-sort form select.open {background-image:url(images/ico_select01_ov.svg);}
+
+.wrap_cmt_default .comments-list > ul > li {border-bottom:1px solid #bdbdbd; overflow:hidden;}
+.wrap_cmt_default .comments-list > ul > li > div:not(.recmt) {font-size:14px; padding:20px 0;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-username {display:flex; align-items:center; justify-content:space-between; font-size:16px; font-weight:700;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-username img {display:none;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-username span {font-size:14px; font-weight:400; color:#888;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-content {font-size:13px; padding:10px 0 20px;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-content [class^="comments-list-image"] {display:block;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-content [class^="comments-list-image"] img {max-width:100%;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-content [class^="comments-list-file"] {display:flex; align-items:center; margin-top:20px;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-content [class^="comments-list-file"] p {text-indent:-9999px; width:25px; height:25px; background:#eee url(images/ico_file01.svg) no-repeat center; border-radius:50px;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-content [class^="comments-list-file"] a {line-height:25px; padding:0 10px;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-controller {display:flex; align-items:center; justify-content:space-between;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-controller > div > i {display:inline-block; padding:0 0 0 10px;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-controller .comments-button-action.comments-button-like span {display:inline-block; margin-right:5px; text-indent:-9999px; width:17px; height:17px; background:url(images/ico_heart01.svg) no-repeat center; background-size:100%;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-controller .comments-button-action.comments-button-like.on span {background-image:url(images/ico_heart01_ov.svg);}
+.wrap_cmt_default .comments-list > ul > li .comments-list-controller .comments-button-action.comments-button-reply.kboard-reply {width:30px; height:20px; text-indent:-9999px; padding:0 10px; background:url(images/ico_comment01.svg) no-repeat center; background-size:16px;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-controller .comments-button-action.comments-button-reply.kboard-reply {width:30px; height:20px; text-indent:-9999px; padding:0 10px; background:url(images/ico_comment01.svg) no-repeat center; background-size:16px;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-controller .cmt_edit_btn > button {font-size:12px; color:#bdbdbd; padding:5px 10px; border:1px solid #bdbdbd;}
+.wrap_cmt_default .comments-list > ul > li .comments-list-controller .cmt_edit_btn > button:hover {color:#000; border-color:#000;}
+.wrap_cmt_default .comments-list > ul > li > .recmt {margin-bottom:-1px; overflow:hidden;}
+.wrap_cmt_default .comments-list > ul > li > .recmt .comments-list {padding-left:30px; border-top:1px dashed #e0e0e0;}
+.wrap_cmt_default .comments-list > ul > li > .recmt .comments-list ul li {border-bottom:0;}
+.wrap_cmt_default .comments-list .kboard-comments-form {padding:30px 30px 20px; background:#f0f0f0;}
+
+.wrap_cmt_default .kboard-comments-form {font-size:14px; padding:20px 0; border-top:1px dashed #f9f9f9;}
+.wrap_cmt_default .kboard-comments-form textarea {border-radius:5px;}
+.wrap_cmt_default .kboard-comments-form textarea,
+.wrap_cmt_default .kboard-comments-form textarea::placeholder {font-size:13px; line-height:1.5;}
+.wrap_cmt_default .kboard-comments-form textarea:focus {font-size:13px; border-color:#ddd;}
+.wrap_cmt_default .kboard-comments-form .plus_field {display:flex; align-items:flex-end; justify-content:space-between;}
+.wrap_cmt_default .kboard-comments-form .plus_field .comments-field-wrap {margin-top:10px;}
+.wrap_cmt_default .kboard-comments-form .plus_field .comments-field-wrap > div {display:flex; align-items:center;}
+.wrap_cmt_default .kboard-comments-form .plus_field .comments-field-wrap > div + div {margin-top:10px;}
+.wrap_cmt_default .kboard-comments-form .plus_field .comments-field-wrap > div > label {width:100px;}
+.wrap_cmt_default .kboard-comments-form .plus_field .comments-field-wrap > div > input {font-size:12px; background:#fff; border:1px solid #ddd; border-radius:2px;}
+.wrap_cmt_default .kboard-comments-form .plus_field .comments-field-wrap > div > input:focus {border:1px solid #ddd;}
+.wrap_cmt_default .kboard-comments-form .plus_field .comments-submit-button {text-align:right;}
+.wrap_cmt_default .kboard-comments-form .plus_field .comments-submit-button > input {color:#fff; font-size:14px; padding:10px 30px; background:#333;}
+.wrap_cmt_default .cmt_list + #kboard-comments-form-52 .kboard-comments-form {border-top:0;}
+
+.wrap_cmt_default .kboard-comments-wrap .kboard-comments-login {text-align:center; font-weight:700; padding:50px 0; background:#f9f9f9;}
+/*
+.kboard-comments-default { background-color: #f9f9f9; }
+.kboard-comments-default form { margin: 0; padding: 0; }
+.kboard-comments-default hr { clear: both; margin: 0 !important; padding: 5px 0 0 0 !important; max-width: 100% !important; height: 0 !important; border: 0 !important; border-bottom: 1px dashed #d8d8d8 !important; background: none !important; background-color: transparent !important; }
+.kboard-comments-default input[type=text],
+.kboard-comments-default input[type=email],
+.kboard-comments-default input[type=number],
+.kboard-comments-default input[type=date],
+.kboard-comments-default input[type=file],
+.kboard-comments-default input[type=password] { display: inline; margin: 0; padding: 0 5px; width: 50%; height: 26px; line-height: 26px; font-size: 14px; border: 1px solid #eaeaea; background-color: white; color: #8a8a8a; vertical-align: top; box-sizing: border-box; text-indent: 0; }
+.kboard-comments-default .kboard-comments-wrap { padding: 15px 15px 0 0; }
+.kboard-comments-default .comments-header { padding: 0 0 0 15px; overflow: hidden; line-height: 1; }
+.kboard-comments-default .comments-count { display: inline; color: #8a8a8a; font-size: 14px; }
+.kboard-comments-default .comments-count .comments-total-count { color: #f05726; font-size: 14px; }
+.kboard-comments-default .comments-sort { float: right; text-align: right; }
+.kboard-comments-default .comments-sort select { display: inline; margin: 0; padding: 0; border: 0; width: auto; min-width: 0; max-width: none; height: auto; min-height: 0; color: #66666a; font-size: 14px; background: none; background-color: transparent; cursor: pointer; box-shadow: none; text-indent: 0; -webkit-appearance: menulist; -moz-appearance: menulist; appearance: menulist; }
+.kboard-comments-default .comments-list { padding: 0 0 0 15px; overflow: hidden; }
+.kboard-comments-default .comments-list ul { margin: 0 !important; padding: 0 !important; list-style: none; border: 0; background: none; }
+.kboard-comments-default .comments-list ul li { margin: 0 !important; padding: 15px 0 0 0 !important; list-style: none; border: 0; background: none; }
+.kboard-comments-default .comments-list .comments-list-username { float: left; margin: 0; padding-right: 10px; width: auto; font-size: 14px; color: #3b3b3b; font-weight: bold; line-height: 24px; }
+.kboard-comments-default .comments-list .comments-list-username a { color: #3b3b3b; }
+.kboard-comments-default .comments-list .comments-list-username img.avatar { display: inline; margin: 0 3px 0 0; width: 24px; max-width: none; height: 24px; vertical-align: middle; border-radius: 50%; }
+.kboard-comments-default .comments-list .comments-list-create { float: left; margin: 0; padding-right: 10px; width: auto; font-size: 13px; color: gray; line-height: 24px; }
+.kboard-comments-default .comments-list .comments-list-content { clear: both; padding: 10px 0; word-break: break-all; overflow: hidden; }
+.kboard-comments-default .comments-list .comments-list-content iframe { max-width: 100%; }
+.kboard-comments-default .comments-list .comments-list-content img { display: inline; margin: 0; vertical-align: middle; max-width: 100%; }
+.kboard-comments-default .comments-list .comments-list-content p { margin: 0 0 0.75em; }
+.kboard-comments-default .comments-list .comments-list-content p:last-child { margin: 0; }
+.kboard-comments-default .comments-list .comments-list-content .aligncenter { display: block; margin-right: auto; margin-left: auto; }
+.kboard-comments-default .comments-list .comments-list-content .alignright { float:right; }
+.kboard-comments-default .comments-list .comments-list-content .alignleft { float: left; }
+.kboard-comments-default .comments-list .comments-list-controller { clear: both; overflow: hidden; line-height: 1; }
+.kboard-comments-default .comments-list .comments-list-controller .left { position: static; float: left; }
+.kboard-comments-default .comments-list .comments-list-controller .right { position: static; float: right; text-align: right; }
+.kboard-comments-default .comments-list .comments-list-controller .comments-button-action { margin: 0 0 5px 0; padding: 3px 4px; font-size: 13px; font-weight: normal; line-height: 12px; text-align: left; border: 1px solid #ededed; background: none; background-color: white; border-radius: 2px; letter-spacing: normal; cursor: pointer; vertical-align: middle; text-shadow: none; box-shadow: none; }
+.kboard-comments-default .comments-list .comments-list-controller .comments-button-action span { position: static; display: inline; margin: 0; padding: 0; font-size: 12px; line-height: 12px; }
+.kboard-comments-default .comments-list .comments-list-controller .comments-button-like { color: #ff5959; }
+.kboard-comments-default .comments-list .comments-list-controller .comments-button-unlike { color: #3d62aa; }
+.kboard-comments-default .comments-list .comments-list-controller .comments-button-delete { color: gray; }
+.kboard-comments-default .comments-list .comments-list-controller .comments-button-edit { color: gray; }
+.kboard-comments-default .comments-list .comments-list-controller .comments-button-reply { color: gray; }
+.kboard-comments-default .comments-list .comments-list-controller .kboard-reply-active { }
+.kboard-comments-default .comments-list .comments-reply-form { }
+.kboard-comments-default .kboard-comments-form { padding: 15px 0 15px 15px; overflow: hidden; }
+.kboard-comments-default .kboard-comments-form .comment-textarea { margin: 0; padding: 5px; width: 100%; min-width: 100%; max-width: 100%; height: 60px; min-height: 0; border: 1px solid #eaeaea; font-size: 14px; background-color: white; color: #8a8a8a; vertical-align: top; box-sizing: border-box; text-indent: 0; }
+.kboard-comments-default .kboard-comments-form .comments-field-wrap { display: none; float: left; width: 50%; }
+.kboard-comments-default .kboard-comments-form .comments-field { margin-bottom: 10px; line-height: 28px; font-size: 14px; }
+.kboard-comments-default .kboard-comments-form .comments-field .comments-field-label { display: inline-block !important; margin: 0; padding: 0; width: 100px; font-size: 14px; color: #8a8a8a; vertical-align: top; }
+.kboard-comments-default .kboard-comments-form .comments-field img { display: inline; margin: 0; padding: 0; width: auto; max-width: 100%; vertical-align: top; }
+.kboard-comments-default .kboard-comments-form .comments-submit-button { display: none; float: right; }
+.kboard-comments-default .kboard-comments-form .comments-submit-button input[type=submit] { margin: 0; padding: 10px 20px; width: auto; min-width: inherit; max-width: inherit; border: 0; background-color: black; color: white; font-weight: bold; cursor: pointer; text-align: center; vertical-align: top; }
+.kboard-comments-default .kboard-comments-login { padding: 15px 0 15px 15px; text-align: center; font-size: 13px; overflow: hidden; }
+*/
+@media screen and (max-width: 640px) {
+	.wrap_cmt_default .comments-header {font-size:12px;}
+	.wrap_cmt_default .comments-header .comments-sort form select {font-size:12px; padding:0 20px 0 10px; background-position:right center; background-size:10px;}
+	.wrap_cmt_default .comments-list > ul > li > div:not(.recmt) {font-size:12px; padding:15px 0;}
+	.wrap_cmt_default .comments-list > ul > li .comments-list-username {font-size:14px;}
+	.wrap_cmt_default .comments-list > ul > li .comments-list-username span {font-size:12px;}
+	.wrap_cmt_default .comments-list > ul > li .comments-list-content {font-size:12px;}
+	.wrap_cmt_default .comments-list > ul > li .comments-list-controller .comments-button-action.comments-button-like {font-size:12px;}
+	.wrap_cmt_default .comments-list > ul > li .comments-list-controller .comments-button-action.comments-button-like span {width:13px; height:13px;}
+	.wrap_cmt_default .comments-list > ul > li .comments-list-controller > div > i {padding:0 0 0 5px;}
+	.wrap_cmt_default .comments-list > ul > li .comments-list-controller .comments-button-action.comments-button-reply.kboard-reply {width:22px; height:22px; padding:0;}
+	.wrap_cmt_default .comments-list > ul > li .comments-list-controller .cmt_edit_btn > button {font-size:10px;}
+	
+	.wrap_cmt_default .kboard-comments-form {padding:15px 0 10px;}
+	.wrap_cmt_default .kboard-comments-form .plus_field {display:block;}
+	.wrap_cmt_default .kboard-comments-form .plus_field .comments-field-wrap > div > label {font-size:12px; width:50px;}
+	.wrap_cmt_default .kboard-comments-form .plus_field .comments-submit-button > input {font-size:12px;}
+	.wrap_cmt_default .kboard-comments-form .plus_field .comments-submit-button {margin-top:30px;}
+
+	.wrap_cmt_default .comments-list .kboard-comments-form {padding:15px 15px 10px;}
+
+	/*
+	.kboard-comments-default input[type=text],
+	.kboard-comments-default input[type=email],
+	.kboard-comments-default input[type=number],
+	.kboard-comments-default input[type=date],
+	.kboard-comments-default input[type=password] { width: 100%; height: 28px; line-height: 28px; box-sizing: border-box; }
+	.kboard-comments-default input[type=file] { width: 100%; height: auto; line-height: normal; box-sizing: border-box; }
+	.kboard-comments-default .kboard-comments-form .comments-field { float: none; width: auto; }
+	.kboard-comments-default .kboard-comments-form .comments-field .comments-field-label { display: block; margin: 0; }
+	.kboard-comments-default .kboard-comments-form .comments-field-wrap { float: left; width: 100%; }
+	.kboard-comments-default .kboard-comments-form .comments-submit-button { float: left; width: 100%; }
+	.kboard-comments-default .kboard-comments-form .comments-submit-button input[type=submit] { padding: 10px 0; width: 100%; box-sizing: border-box; }
+	*/
+}
